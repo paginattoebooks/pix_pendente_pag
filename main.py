@@ -19,8 +19,6 @@ ZAPI_CLIENT_TOKEN = os.getenv("ZAPI_CLIENT_TOKEN", "")
 SENDER_NAME = os.getenv("WHATSAPP_SENDER_NAME", "Paginatto")
 MSG_TEMPLATE = os.getenv(
     "MSG_TEMPLATE",
-    "Oi {name}! Seu pedido via PIX do {product} no valor de {price} ficou pendente. "
-    "Pague aqui para liberar já: {checkout_url} — {brand}"
 )
 ZAPI_URL = f"https://api.z-api.io/instances/{ZAPI_INSTANCE}/token/{ZAPI_TOKEN}/send-text"
 
